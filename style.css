@@ -60,7 +60,7 @@ header i{
   justify-content:space-between;
   padding-top: 70px;
 }
-.mini1{
+.mani1{
   background-color: aliceblue;
   width: 400px;
   height: 100%;
@@ -71,20 +71,24 @@ header i{
   overflow: scroll;
   
 }
-.mini2{
+.mani1::-webkit-scrollbar{
+  scroll-snap-type: y mandatory;
+}
+
+.mani2{
   background-color: white;
   border-radius: 10px 10px 0px 0px;
   padding-left: 15px;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
   width: 100%;
 }
-#bxs{
+#bxss{
   background-color: gainsboro;
   border-radius: 50%;
   padding: 11px;
   cursor: pointer;
 }
-.mini2 input{
+.mani2 input{
   padding: 10px;
   border-radius: 15px;
   width: 300px;
@@ -97,24 +101,24 @@ header i{
   opacity: 0.2;
   width: 300px;
 }
-.mini3{
+.mani3{
   justify-content: center;
   align-items: center;
   text-align: center;
   display:flex ;
 }
-.mini3 h3{
+.mani3 h3{
   font-size: .7rem;
   font-weight: 200;
   margin-top: 5%;
 }
-.mini3 span{
+.mani3 span{
   display: flex;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
 }
-.mini3 span:hover{
+.mani3 span:hover{
      background-color: aliceblue;
 }
 #bb{
@@ -166,39 +170,39 @@ header i{
   height: 100vh;
   border-radius: 15px;
 }
-.mont{
+.mant{
   display: flex;
   font-family: "Segoe UI";
   background-color: white;
   border-radius: 10px;
-  padding: 10px 0px;
+  padding: 20px ;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-  margin-top: 21%;
 }
-.mont i{
+.mant i{
   font-size: 1.5rem;
   margin-top: 3px;
   cursor: pointer;
 }
-.mont p{
+.mant p{
   font-size: .9rem;
 }
 
-.mini-mont{
+.mani-mont{
   background-color: white;
   padding: 10px 0px;
   margin-top: -5%;
 }
-.mont1{
+.mant1{
   margin-top: -18%;
   background-color: white;
   border-radius: 10px 10px 0 0;
+  display: flex;
 }
-.mont1 img{
+.mant1 img{
   border-radius: 50%;
   cursor: pointer;
 }
-#spa{
+#spap{
   margin-top: 10px;
   margin-left: -10%;
 }
@@ -207,7 +211,7 @@ header i{
   cursor: pointer;
 }
 
-#mon{
+#mono{
   background-color:rgb(36, 36, 253) ;
   border-radius: 50%;
   margin: 10px;
@@ -218,31 +222,35 @@ header i{
 .lineb hr{
   margin: 0px 50px;
 }
-.mont2{
-  display: flex;    
+.mant2{
+  display: flex;
+  margin-top: -5%;    
 }
-.mont2 span{
+.mant2 span{
   border: none;
   background-color: white;
   border-radius: 10px;
   color: gray;
   display: flex;
 }
-.mont2 span:hover{
+.mant2 span:hover{
   background-color: gainsboro;
   padding: 5px 5px;
   border-radius: 10px;
   cursor: pointer;
 }
-.mont2 h3{
+.mant2 h3{
   margin-top: -5%;
 }
-.mont2 i{
+.mant2 i{
   color: gray;
   font-size: 1.4rem;
   cursor: pointer;
 }
-.mini-mont #paa{
+.mani-mont{
+  margin-top: 10%;
+}
+.mani-mont #paaa{
   margin-left: 10px;
 }
 #heart{
@@ -272,6 +280,9 @@ header i{
   overflow: scroll;
   height: 100%;
   padding-bottom: 5%;
+}
+.chotaa::-webkit-scrollbar{
+  scroll-snap-type: y mandatory;
 }
 #hot span{
    font-size: 1.6rem;
@@ -695,9 +706,10 @@ header i{
     margin-left:28%;
     margin-top: 4em;
     position: fixed;
-    height: 100%;
+    height: 150%;
     scroll-behavior: smooth;
     padding-bottom: -50%;
+    padding-bottom: 20%;
 
   }
 #people:hover{
